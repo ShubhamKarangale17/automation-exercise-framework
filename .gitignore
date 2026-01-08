@@ -1,0 +1,51 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.settings/
+*.iml
+
+# Build
+target/
+build/
+bin/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.m2/
+dependency-reduced-pom.xml
+
+# Test reports
+reports/
+test-output/
+*.html
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+.DS_Store
+*.exe
+
+# Screenshots
+screenshots/
+
+# Credentials (never commit!)
+credentials.json
+secrets.properties

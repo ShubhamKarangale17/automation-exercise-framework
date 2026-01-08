@@ -1,0 +1,192 @@
+{
+  "info": {
+    "name": "Fake Store API Collection",
+    "description": "API testing collection for Fake Store API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/products",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["products"]
+            },
+            "description": "Fetch all products from the store"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/products/1",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["products", "1"]
+            },
+            "description": "Fetch a specific product by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product by Category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/products/category/electronics",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["products", "category", "electronics"]
+            },
+            "description": "Fetch products by category"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Carts",
+      "item": [
+        {
+          "name": "Get All Carts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/carts",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["carts"]
+            },
+            "description": "Fetch all shopping carts"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cart by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/carts/1",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["carts", "1"]
+            },
+            "description": "Fetch a specific cart by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Cart",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 1,\n  \"date\": \"2024-01-08\",\n  \"products\": [\n    {\n      \"productId\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"productId\": 3,\n      \"quantity\": 1\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "https://fakestoreapi.com/carts",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["carts"]
+            },
+            "description": "Create a new shopping cart"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Cart",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 1,\n  \"date\": \"2024-01-09\",\n  \"products\": [\n    {\n      \"productId\": 1,\n      \"quantity\": 5\n    },\n    {\n      \"productId\": 2,\n      \"quantity\": 2\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "https://fakestoreapi.com/carts/1",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["carts", "1"]
+            },
+            "description": "Update an existing cart"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Cart",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/carts/1",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["carts", "1"]
+            },
+            "description": "Delete a shopping cart"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get All Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/users",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["users"]
+            },
+            "description": "Fetch all users"
+          },
+          "response": []
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://fakestoreapi.com/users/1",
+              "protocol": "https",
+              "host": ["fakestoreapi", "com"],
+              "path": ["users", "1"]
+            },
+            "description": "Fetch a specific user by ID"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

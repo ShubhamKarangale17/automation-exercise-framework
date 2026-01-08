@@ -1,0 +1,30 @@
+{
+  "loginTestData": [
+    {
+      "email": "customer@automationpractice.com",
+      "password": "password123",
+      "expectedResult": "success"
+    },
+    {
+      "email": "invalid@test.com",
+      "password": "wrongpassword",
+      "expectedResult": "failure"
+    }
+  ],
+  "productTestData": [
+    {
+      "productName": "Sleeveless Dress",
+      "searchKeyword": "dress"
+    },
+    {
+      "productName": "Blue Top",
+      "searchKeyword": "blue"
+    }
+  ],
+  "cartTestData": [
+    {
+      "quantity": 2,
+      "productId": 1
+    }
+  ]
+}
