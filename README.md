@@ -450,7 +450,7 @@ cp -r reports/ $WORKSPACE/reports/
 ### Using Postman for API Design & Validation
 
 #### Step 1: Create Workspace
-1. Open Postman
+1. Open Postman.
 2. Create new workspace: "Automation Exercise"
 
 #### Step 2: Import Provided Collection
